@@ -1,0 +1,7 @@
+/*Reset for default margin and padding sizes*/
+html, body, ul, li, nav, p, a,
+h1, h2, h3, h4, h5, h6, span, img {
+	padding: 0;
+	margin: 0;
+	font-family: 'Open Sans', sans-serif;
+}
