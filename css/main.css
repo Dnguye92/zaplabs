@@ -8,14 +8,13 @@ fieldset, form, label, legend,
 table, caption, tbody, tfoot, thead, tr, th, td,
 article, aside, canvas, details, embed, 
 figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
+menu, nav, output, section, summary,
 time, mark, audio, video {
 	margin: 0;
 	padding: 0;
 	border: 0;
 	vertical-align: baseline;
 	font-family: 'Roboto', sans-serif;
-	color: #000;
 }
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
@@ -156,7 +155,7 @@ button {
 /*SPLIT-LEFT & SPLIT-RIGHT DIV STYLING*/
 
 #split-left {
-	width: 60%;
+	width: 58%;
 	float: left;
 	margin: 0 3.5em 2em 3em;
 	display: inline-block;
@@ -225,13 +224,12 @@ button {
 
 .row-split {
 	width: 95%;
-	margin: ;
 }
 
 #split-right {
 	width: 25%;
 	float: right;
-	margin-right: 3em;
+	padding-right: 0.5em;
 	display: inline-block;
 }
 
@@ -240,4 +238,67 @@ img {
 	position: relative;
 }
 
+/*MEDIA QUERIES*/
 
+/*WIDTH: 1366px*/
+@media (max-width: 1366px) {
+	#split-left {
+		margin: 0 2em 2em 2em;
+	}
+	#split-right {
+		width: 35%;
+		margin-right: 0;
+	}
+	ul {
+		padding: 2em 1.5em 1.5em 1.5em;
+	}
+}
+
+/*WIDTH: 1355px*/
+@media (max-width: 1355px) {
+	.thumbnail {
+		width: 115px;
+		height: 115px;
+	}
+}
+
+/*WIDTH: 1024px*/
+@media (max-width: 1024px) {
+	#split-left {
+		width: 100%;
+		margin: 0;
+	}
+	.thumbnail {
+		margin-left: 1.5em;
+	}
+	.row {
+		width: 95%;
+	}
+	.row h3 {
+		float: right;
+		margin: 0 1em 0.5em 0;
+	}
+	#split-right {
+		width: 100%;
+		text-align: center;
+	}
+	img {
+		width: 300px;
+		height: 200px;
+		padding: 0;
+		margin: 0;
+	}
+	.horizontal-split {
+		width: 80%;
+	}
+	button {
+		margin-right: 4.5em;
+	}
+}
+
+/*WIDTH: 768px*/
+@media (max-width: 768px) {
+	li {
+		padding: 0.5em 0;
+	}
+}
