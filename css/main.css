@@ -75,18 +75,18 @@ li:hover, li a:hover {
 	background-color: #507AA5;
 	border-radius: 5px;
 	color: #fff;
-	transition: 0.1s ease-out;
-	-webkit-transition: 0.1s ease-out;
-	-ms-transition: 0.1s ease-out;
-	-moz-transition: 0.1s ease-out;
+	transition-duration: : 0.1s ease-out;
+	-webkit-transition-duration: 0.1s ease-out;
+	-ms-transition-duration: 0.1s ease-out;
+	-moz-transition-duration: 0.1s ease-out;
 }
 
 .drop-content a:hover {
 	background-color: #466A90;
-	transition: 0.1s ease-out;
-	-webkit-transition: 0.1s ease-out;
-	-ms-transition: 0.1s ease-out;
-	-moz-transition: 0.1s ease-out;
+	transition-duration: : 0.1s ease-out;
+	-webkit-transition-duration: 0.1s ease-out;
+	-ms-transition-duration: 0.1s ease-out;
+	-moz-transition-duration: 0.1s ease-out;
 	font-weight: 700;
 }
 
@@ -223,7 +223,8 @@ button {
 }
 
 .row-split {
-	width: 95%;
+	width: 98%;
+	margin: 1.5em 0;
 }
 
 #split-right {
@@ -272,7 +273,7 @@ img {
 		margin-left: 1.5em;
 	}
 	.row {
-		width: 95%;
+		width: 100%;
 	}
 	.row h3 {
 		float: right;
@@ -281,6 +282,7 @@ img {
 	#split-right {
 		width: 100%;
 		text-align: center;
+		padding-bottom: 1.5em;
 	}
 	img {
 		width: 300px;
@@ -291,14 +293,15 @@ img {
 	.horizontal-split {
 		width: 80%;
 	}
-	button {
-		margin-right: 4.5em;
+	.row-split {
+		width: 97%;
 	}
-}
-
-/*WIDTH: 768px*/
-@media (max-width: 768px) {
+	#search {
+		float: left;
+	}
 	li {
-		padding: 0.5em 0;
+		padding: 0.3em 0;
+		display: inline-block;
+		margin: 0.5em 0.5em;
 	}
 }
